@@ -10,8 +10,6 @@
 
 ## 1. 코드 포메팅
 
-----
-
 ### 1-1) import
 - 알파벳 순으로 정렬합니다.
 - 해당 파일에서 필요로 하는 프레임워크/라이브러리는 모두 작성합니다.
@@ -178,7 +176,6 @@ Metric.buttonHeight
 
 ## 2. 네이밍
 
-----
 ### 2-1) 오브젝트
 - `붙여주고자 하는 이름` + `오브젝트 타입` 형식으로 작성합니다.
 - 이름을 과도학 ㅔ축약하지 않습니다. (ex. button -> btn)
@@ -278,8 +275,6 @@ let mainNAV = UINavigationController(rootViewController: mainVC)
 ----
 
 ## 3. 코드 스타일
-
-----
 
 ### 3-1) 조건문
 - `else if`, `else`문은 코드블록(`{ }`) 과 함께 한 줄로 작성합니다.
@@ -820,8 +815,6 @@ let width = 12
 ----
 
 ## 4. Snapkit
-
-----
 
 ### 4-1) Left/Right vs Leading/Traling
 - Left/Right 보다는 Leading/Trailing 을 사용합니다., (Apple의 권장사항)
