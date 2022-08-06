@@ -6,6 +6,42 @@
 - [스타일쉐어 컨벤션](https://github.com/StyleShare/swift-style-guide)
 - [에어비엔비 컨벤션](https://github.com/airbnb/swift)
 
+
+----
+
+## 목차
+1. 코드 포메팅
+	- 1-1) import
+	- 1-2) 작성 순서
+	- 1-3) 빈줄
+	- 1-4) 들여쓰기
+	- 1-5) 띄어쓰기
+	- 1-6) 반복적으로 사용되는 컴포넌트 값
+
+2. 네이밍
+	- 2-1) 오브젝트
+	- 2-2) 선언
+	- 2-3) ViewController
+	- 2-4) NavigationController
+
+3. 코드 스타일
+	- 3-1) 조건문
+	- 3-2) 함수
+	- 3-3) 주석
+	- 3-4) Eror Handling - if let, guard let
+	- 3-5) Switch문
+	- 3-6) Closure
+	- 3-7) Optional 처리
+	- 3-8) Class
+	- 3-9) View Life-Cycle
+	- 3-10) 프로토콜 Extension
+	- 3-11) 커스텀 Font 사용 시
+	- 3-12) Static Class 사용 시
+	- 3-13) CGFloat 값의 소수점이 0인 경우
+
+4. Snapkit
+	- 4-1) Left/Right vs Leading/Trailing
+
 ----
 
 ## 1. 코드 포메팅
