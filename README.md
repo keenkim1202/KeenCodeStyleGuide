@@ -10,37 +10,37 @@
 ----
 
 ## 목차
-1. 코드 포메팅
-	- 1-1) import
-	- 1-2) 작성 순서
-	- 1-3) 빈줄
-	- 1-4) 들여쓰기
-	- 1-5) 띄어쓰기
-	- 1-6) 반복적으로 사용되는 컴포넌트 값
+- [1. 코드 포메팅](https://github.com/keenkim1202/KeenCodeStyleGuide#1-%EC%BD%94%EB%93%9C-%ED%8F%AC%EB%A9%94%ED%8C%85)
+	- [1-1) import](https://github.com/keenkim1202/KeenCodeStyleGuide#1-1-import)
+	- [1-2) 작성 순서](https://github.com/keenkim1202/KeenCodeStyleGuide#1-2-%EC%9E%91%EC%84%B1-%EC%88%9C%EC%84%9C)
+	- [1-3) 빈줄](https://github.com/keenkim1202/KeenCodeStyleGuide#1-3-%EB%B9%88%EC%A4%84)
+	- [1-4) 들여쓰기](https://github.com/keenkim1202/KeenCodeStyleGuide#1-4-%EB%93%A4%EC%97%AC%EC%93%B0%EA%B8%B0)
+	- [1-5) 띄어쓰기](https://github.com/keenkim1202/KeenCodeStyleGuide#1-5-%EB%9D%84%EC%96%B4%EC%93%B0%EA%B8%B0)
+	- [1-6) 반복적으로 사용되는 컴포넌트 값](https://github.com/keenkim1202/KeenCodeStyleGuide#1-6-%EB%B0%98%EB%B3%B5%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EA%B0%92-%EB%AA%A8%EB%93%88%ED%99%94%ED%95%98%EA%B8%B0)
 
-2. 네이밍
-	- 2-1) 오브젝트
-	- 2-2) 선언
-	- 2-3) ViewController
-	- 2-4) NavigationController
+- [2. 네이밍](https://github.com/keenkim1202/KeenCodeStyleGuide#2-%EB%84%A4%EC%9D%B4%EB%B0%8D)
+	- [2-1) 오브젝트](https://github.com/keenkim1202/KeenCodeStyleGuide#2-1-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8)
+	- [2-2) 선언](https://github.com/keenkim1202/KeenCodeStyleGuide#2-2-%EC%84%A0%EC%96%B8)
+	- [2-3) ViewController](https://github.com/keenkim1202/KeenCodeStyleGuide#2-3-viewcontroller)
+	- [2-4) NavigationController](https://github.com/keenkim1202/KeenCodeStyleGuide#2-4-navigationcontroller)
 
-3. 코드 스타일
-	- 3-1) 조건문
-	- 3-2) 함수
-	- 3-3) 주석
-	- 3-4) Eror Handling - if let, guard let
-	- 3-5) Switch문
-	- 3-6) Closure
-	- 3-7) Optional 처리
-	- 3-8) Class
-	- 3-9) View Life-Cycle
-	- 3-10) 프로토콜 Extension
-	- 3-11) 커스텀 Font 사용 시
-	- 3-12) Static Class 사용 시
-	- 3-13) CGFloat 값의 소수점이 0인 경우
+- [3. 코드 스타일](https://github.com/keenkim1202/KeenCodeStyleGuide#3-%EC%BD%94%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC)
+	- [3-1) 조건문](https://github.com/keenkim1202/KeenCodeStyleGuide#3-1-%EC%A1%B0%EA%B1%B4%EB%AC%B8)
+	- [3-2) 함수](https://github.com/keenkim1202/KeenCodeStyleGuide#3-2-%ED%95%A8%EC%88%98)
+	- [3-3) 주석](https://github.com/keenkim1202/KeenCodeStyleGuide#3-3-%EC%A3%BC%EC%84%9D)
+	- [3-4) Eror Handling - if let, guard let](https://github.com/keenkim1202/KeenCodeStyleGuide#3-4-error-handling---if-let-gaurd-let)
+	- [3-5) Switch문](https://github.com/keenkim1202/KeenCodeStyleGuide#3-5-switch-%EB%AC%B8)
+	- [3-6) Closure](https://github.com/keenkim1202/KeenCodeStyleGuide#3-6-closure)
+	- [3-7) Optional 처리](https://github.com/keenkim1202/KeenCodeStyleGuide#3-7-optional-%EC%B2%98%EB%A6%AC)
+	- [3-8) Class](https://github.com/keenkim1202/KeenCodeStyleGuide#3-8-class)
+	- [3-9) View Life-Cycle](https://github.com/keenkim1202/KeenCodeStyleGuide#3-9-view-life-cycle-%EB%B7%B0-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0)
+	- [3-10) 프로토콜 Extension](https://github.com/keenkim1202/KeenCodeStyleGuide#3-10-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-extension)
+	- [3-11) 커스텀 Font 사용 시](https://github.com/keenkim1202/KeenCodeStyleGuide#3-11-font-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95)
+	- [3-12) Static Class 사용 시](https://github.com/keenkim1202/KeenCodeStyleGuide#3-12-static-class-%EC%A0%91%EA%B7%BC-%EB%B0%A9%EB%B2%95)
+	- [3-13) CGFloat 값의 소수점이 0인 경우](https://github.com/keenkim1202/KeenCodeStyleGuide#3-13-cgfloat-%EA%B0%92%EC%9D%98-%EC%86%8C%EC%88%98%EC%A0%90-%EC%9E%90%EB%A6%AC%EA%B0%80-0-%EC%9D%B8-%EA%B2%BD%EC%9A%B0)
 
-4. Snapkit
-	- 4-1) Left/Right vs Leading/Trailing
+- [4. Snapkit](https://github.com/keenkim1202/KeenCodeStyleGuide#4-snapkit)
+	- [4-1) Left/Right vs Leading/Trailing](https://github.com/keenkim1202/KeenCodeStyleGuide#4-1-leftright-vs-leadingtraling)
 
 ----
 
@@ -298,7 +298,7 @@ var infoList: [SomeInfo] = [SomeInfo]()
 let mainVC = UIStoryboard(name: "User", bundle: nil).instantiateViewController(withIdentifier: "mainVC")
 ```
 
-2-4) NavigationController
+### 2-4) NavigationController
 - NavigationController 변수/상수 선언시에는 NAV로 줄여서 네이밍을 합니다.
 
 ```swift
@@ -801,7 +801,7 @@ final class ViewController: UIViewController, UITableViewDataSource, UITableView
 
 </br>
 
-### 3-11) Font 설정 방법
+### 3-11) 커스텀 Font 사용 시
 - 기본 폰트를 커스텀 폰트를 사용하는 경우, `UIFont Extension` 에 커스텀 폰트를 추가하여 사용합니다.
 	- 스토리보드로 폰트를 지정하는 것을 지양합니다.
 ```swift
@@ -812,7 +812,7 @@ label.font = .someCustomFont(ofSize: 14, weight: .regular)
 
 </br>
 
-### 3-12) Static Class 접근 방법
+### 3-12) Static Class 접근 시
 - `UIColor`, `UIFont`, `UIImage` 등 기본으로 제공되고 생략 가능한 `static class`에 접귾라 때는 해당 `prefix`를 생략합니다.
 	- 커스텀한 모듈 클래스/구조체에 대해서는 생략하지 않습니다.
 ```swift
