@@ -17,6 +17,7 @@
 - 해당 파일에서 필요로 하는 프레임워크/라이브러리는 모두 작성합니다.
 
 
+</br>
 
 ### 1-2) 작성 순서
 - class 안에 코드를 작성 시에는 다음 순서대로 작성합니다.
@@ -66,6 +67,7 @@ extension ViewController: SomeDelegate {
 }
 ```
 
+</br>
 
 ### 1-3) 빈줄
 - 빈줄에는 공백이 포함되지 않도록 합니다.
@@ -112,12 +114,13 @@ class SomeViewController: UIViewController {
 
 - super.viewDidLoad(), super.viewWillAppear() 뒤에는 빈줄 한줄을 둡니다.
 
+</br>
 
 ### 1-4) 들여쓰기
 - 탭 간격은 4space 로 합니다.
 - 들여쓰기는 Xcode에서 제공하는 ^ + i 를 눌렀을 때, 적용되는 space를 사용합니다.
 
-
+</br>
 
 ### 1-5) 띄어쓰기
 - 콜론(:)을 사용할 때는 콜론의 오른쪽에만 공백을 둡니다.
@@ -129,6 +132,7 @@ let isOdd: Bool = number % 2 == 1 ? true : false
 let lotto: Int = [1, 10, 32, 40, 22, 12]
 ```
 
+</br>
 
 ### 1-6) 반복적으로 사용되는 컴포넌트 값 모듈화하기
 - 여러 파일에서 공통으로 쓰이는 이미지, 색상, 폰트, 크기값 등은 enum + static, strut + static을 사용하여 관리합니다.
@@ -166,6 +170,9 @@ struct Metric {
 // Usage
 Metric.buttonHeight
 ```
+
+</br>
+</br>
 
 ----
 
@@ -215,7 +222,7 @@ hasCat = animal.contains("cat")
 }
 ```
 
-
+</br>
 
 ### 2-2) 선언
 - 최초 선언 시에는 항상 `타입명`을 함께 작성합니다.
@@ -247,7 +254,7 @@ var infoList = [SomeInfo]()
 var infoList: [SomeInfo] = [SomeInfo]()
 ```
 
-
+</br>
 
 ### 2-3) ViewController
 - ViewController 변수/상수 선언시에는 VC로 줄여서 네이밍을 합니다.
@@ -264,6 +271,9 @@ let mainVC = UIStoryboard(name: "User", bundle: nil).instantiateViewController(w
 ```swift
 let mainNAV = UINavigationController(rootViewController: mainVC)
 ```
+
+</br>
+</br>
 
 ----
 
@@ -323,7 +333,7 @@ if isNumber == false {
 }
 ```
 
-
+</br>
 
 ### 3-2) 함수
 - Lower Camel Case 로 작성합니다.
@@ -338,7 +348,7 @@ func isOdd(number:Int) -> Bool {
 }
 ```
 
-
+</br>
 
 ### 3-3) 주석
 - [참고 링크](https://yoojin99.github.io/app/Swift-Documentation/)
@@ -479,7 +489,7 @@ extension SomeViewController: UITableViewDelegate {
 }
 ```
 
-
+</br>
 
 ### 3-4) Error Handling - if let, gaurd let
 - `if let`의 `if` 구문, `guard let`의 `guard` 구문에 여러 개의 상수를 선언하는 경우
@@ -514,7 +524,7 @@ guard let someInfo = someInfoFromOtherViewController else {
 }
 ```
 
-
+</br>
 
 ### 3-5) Switch 문
 - `case` 문이 한 줄이 아닐 때는 케이스와 케이스 사이에 빈줄을 넣습니다.
@@ -564,7 +574,7 @@ default: print("not a")
 }
 ```
 
-
+</br>
 
 ### 3-6) Closure
 - 파라미터와 리턴 타입이 없는 클로저 정의 시에는 `() -> Void`를 사용합니다.
@@ -621,7 +631,7 @@ completion { (one, two, three) in
 }
 ```
 
-
+</br>
 
 ### 3-7) Optional 처리
 - 가능하면 강제 언래핑(`!`)을 지양합니다.
@@ -644,7 +654,7 @@ func userInfo(user: User) -> String {
 }
 ```
 
-
+</br>
 
 ### 3-8) Class
 - 초기화 코드 전에 상수/변수를 선언합니다.
@@ -692,7 +702,7 @@ final class MyPageViewController: UIViewController {
 }
 ```
 
-
+</br>
 
 ### 3-9) View Life-Cycle (뷰 생명주기)
 - 구문 내부 선언 순서는 다음과 같습니다.
@@ -731,7 +741,7 @@ func setLayout() {
 }
 ```
 
-
+</br>
 
 ### 3-10) 프로토콜 extension
 - 프로토콜을 준수할 때는 extension을 만들어 관련 메서드를 분리하여 작성합니다.
@@ -758,7 +768,7 @@ final class ViewController: UIViewController, UITableViewDataSource, UITableView
 }
 ```
 
-
+</br>
 
 ### 3-11) Font 설정 방법
 - 기본 폰트를 커스텀 폰트를 사용하는 경우, `UIFont Extension` 에 커스텀 폰트를 추가하여 사용합니다.
@@ -769,7 +779,7 @@ let label = UILabel()
 label.font = .someCustomFont(ofSize: 14, weight: .regular)
 ```
 
-
+</br>
 
 ### 3-12) Static Class 접근 방법
 - `UIColor`, `UIFont`, `UIImage` 등 기본으로 제공되고 생략 가능한 `static class`에 접귾라 때는 해당 `prefix`를 생략합니다.
@@ -784,7 +794,7 @@ let label = UILabel()
 label.font = UIFont.someCustomFont(ofSize: 14, weight: .regular)
 ```
 
-
+</br>
 
 ### 3-13) CGFloat 값의 소수점 자리가 0 인 경우
 - 소수점이 있는 숫자의 경우, 소수점 자리 값이 `0`인 경우 `0`을 생략합니다.
@@ -803,6 +813,9 @@ let width: CGFloat = 12
 ⛔️ Not Preferred
 let width = 12
 ```
+
+</br>
+</br>
 
 ----
 
@@ -824,3 +837,4 @@ label.snp.make {
 	$0.left.right.equalToSuperView()
 }
 ```
+
