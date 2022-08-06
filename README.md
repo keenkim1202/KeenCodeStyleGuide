@@ -59,11 +59,11 @@
 ### 1-2) 작성 순서
 - class 안에 코드를 작성 시에는 다음 순서대로 작성합니다.
 - 열거형
-- UI 관련 (IBOutlet 이나 코드베이스의 컴포넌트)
+- UI 관련 (`IBOutlet` 이나 코드베이스의 컴포넌트)
 - 상수
 - 변수
   - 클로자로 할당하는 변수 선언
-- View Life-Cycle (viewDidLoad, viewWillAppear ...)
+- View Life-Cycle (`viewDidLoad`, `viewWillAppear` ...)
 - 기타 함수
 - 액션 함수
 - Extension
@@ -114,9 +114,9 @@ extension ViewController: SomeDelegate {
 - 빈줄에는 공백이 포함되지 않도록 합니다.
 - 함수의 끝 부분 등 불필요한 빈줄은 남기지 않습니다.
 - 함수와 함수 사이에는 빈줄 1줄을 둡니다.
-  - 함수1 -> 함수2에 대한 주석 -> 함수2 와 같이 작성하고자 한다면
-  - 함수1 -> 빈줄 -> 함수2에 대한 주석 + 함수2 로 작성합니다.
-- for, if, switch, class, struct, extension이 시작할 때 구문 앞에 빈줄 한줄을 둡니다.
+  - `함수1 -> 함수2에 대한 주석 -> 함수2` 와 같이 작성하고자 한다면
+  - `함수1 -> 빈줄 -> 함수2에 대한 주석 + 함수2` 로 작성합니다.
+- `for`, `if`, `switch`, `class`, `struct`, `extension`이 시작할 때 구문 앞에 빈줄 한줄을 둡니다.
 - 화면 전환 함수(present, dismiss, push, pop) 가 포ㅓ함된 구문이 내부가 3줄 이상일 때, 앞에 빈줄 한줄을 둡니다.
 
 ```swift
@@ -153,7 +153,7 @@ class SomeViewController: UIViewController {
 }
 ```
 
-- super.viewDidLoad(), super.viewWillAppear() 뒤에는 빈줄 한줄을 둡니다.
+- `super.viewDidLoad()`, `super.viewWillAppear()` 뒤에는 빈줄 한줄을 둡니다.
 
 </br>
 
@@ -162,8 +162,8 @@ class SomeViewController: UIViewController {
 </br>
 
 ### 1-4) 들여쓰기
-- 탭 간격은 4space 로 합니다.
-- 들여쓰기는 Xcode에서 제공하는 ^ + i 를 눌렀을 때, 적용되는 space를 사용합니다.
+- 탭 간격은 `4space` 로 합니다.
+- 들여쓰기는 Xcode에서 제공하는 `^ + i` 를 눌렀을 때, 적용되는 space를 사용합니다.
 
 </br>
 
@@ -172,9 +172,9 @@ class SomeViewController: UIViewController {
 </br>
 
 ### 1-5) 띄어쓰기
-- 콜론(:)을 사용할 때는 콜론의 오른쪽에만 공백을 둡니다.
+- 콜론(`:`)을 사용할 때는 콜론의 오른쪽에만 공백을 둡니다.
 - 삼항 연산자의 경우엔 앞뒤로 띄웁니다.
-- 콤마(,) 뒤에는 공백을 둡니다.
+- 콤마(`,`) 뒤에는 공백을 둡니다.
 ```swift
 let number: Int = 3
 let isOdd: Bool = number % 2 == 1 ? true : false
@@ -188,7 +188,7 @@ let lotto: Int = [1, 10, 32, 40, 22, 12]
 </br>
 
 ### 1-6) 반복적으로 사용되는 컴포넌트 값 모듈화하기
-- 여러 파일에서 공통으로 쓰이는 이미지, 색상, 폰트, 크기값 등은 enum + static, strut + static을 사용하여 관리합니다.
+- 여러 파일에서 공통으로 쓰이는 이미지, 색상, 폰트, 크기값 등은 `enum + static`, `struct + static`을 사용하여 관리합니다.
 - (여담: Apple의 Combine framework 의 namespacing에 enum을 사용한다고 합니다.)
 ```swift
 // enum + static
@@ -237,7 +237,7 @@ Metric.buttonHeight
 
 ### 2-1) 오브젝트
 - `붙여주고자 하는 이름` + `오브젝트 타입` 형식으로 작성합니다.
-- 이름을 과도학 ㅔ축약하지 않습니다. (ex. button -> btn)
+- 이름을 과도하게 축약하지 않습니다. (ex. `button` -> `btn`)
 ```swift
 ✅ Preferred
 @IBOutlet weak var searchIdButton: UIButton!
@@ -336,7 +336,7 @@ let mainVC = UIStoryboard(name: "User", bundle: nil).instantiateViewController(w
 </br>
 
 ### 2-4) NavigationController
-- NavigationController 변수/상수 선언시에는 NAV로 줄여서 네이밍을 합니다.
+- `NavigationController` 변수/상수 선언시에는 NAV로 줄여서 네이밍을 합니다.
 
 ```swift
 let mainNAV = UINavigationController(rootViewController: mainVC)
@@ -412,7 +412,7 @@ if isNumber == false {
 </br>
 
 ### 3-2) 함수
-- Lower Camel Case 로 작성합니다.
+- `Lower Camel Case` 로 작성합니다.
 - 함수 안에 작성된 코드가 없다면 한 줄로 작성합니다.
 ```swift
 ✅ Preferred
@@ -731,7 +731,7 @@ completion { (one, two, three) in
 
 ### 3-7) Optional 처리
 - 가능하면 강제 언래핑(`!`)을 지양합니다.
-	- gaurd let이나 if let을 활용합니다.
+	- `gaurd let`이나 `if let`을 활용합니다.
 ```swift
 var userInfo: User?
 
@@ -793,8 +793,8 @@ class ViewController: UIViewController {
 }
 ```
 
-- Class 선언 부 상단에 어떤 화면의 class인지 간략하게 적어줍니다.
-	- 사용하지 않는 viewController는 따로 명시해줍니다.
+- Class 선언 부 상단에 어떤 화면의 `class`인지 간략하게 적어줍니다.
+	- 사용하지 않는 `viewController`는 따로 명시해줍니다.
 ```swift
 /// 마이페이지 메인 화면
 final class MyPageViewController: UIViewController {
@@ -852,7 +852,7 @@ func setLayout() {
 </br>
 
 ### 3-10) 프로토콜 extension
-- 프로토콜을 준수할 때는 extension을 만들어 관련 메서드를 분리하여 작성합니다.
+- 프로토콜을 준수할 때는 `extension`을 만들어 관련 메서드를 분리하여 작성합니다.
 ```swift
 ✅ Preferred
 final class ViewController: UIViewController {
@@ -883,7 +883,7 @@ final class ViewController: UIViewController, UITableViewDataSource, UITableView
 </br>
 
 ### 3-11) 커스텀 Font 사용 시
-- 기본 폰트를 커스텀 폰트를 사용하는 경우, `UIFont Extension` 에 커스텀 폰트를 추가하여 사용합니다.
+- 기본 폰트가 아닌 커스텀 폰트를 사용하는 경우, `UIFont Extension` 에 커스텀 폰트를 추가하여 사용합니다.
 	- 스토리보드로 폰트를 지정하는 것을 지양합니다.
 ```swift
 ✅ Preferred
@@ -946,8 +946,8 @@ let width = 12
 ## 4. Snapkit
 
 ### 4-1) Left/Right vs Leading/Traling
-- Left/Right 보다는 Leading/Trailing 을 사용합니다., (Apple의 권장사항)
-	- 하지만 경우에 따라, 특정 국가와 상관없이 동일한 UX를 위해 항상 똑같은 UI를 제공하고 싶은 경우에 한해 Left/Right를 사용합니다.
+- `Left/Right` 보다는 `Leading/Trailing` 을 사용합니다., (Apple의 권장사항)
+	- 하지만 경우에 따라, 특정 국가와 상관없이 동일한 UX를 위해 항상 똑같은 UI를 제공하고 싶은 경우에 한해 `Left/Right`를 사용합니다.
 ```swift
 ✅ Preferred
 label.snp.make {
