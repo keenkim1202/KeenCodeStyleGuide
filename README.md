@@ -164,4 +164,100 @@ struct Metric {
 Metric.buttonHeight
 ```
 
+----
 
+## 2. 네이밍
+
+### 2-1) 오브젝트
+- `붙여주고자 하는 이름` + `오브젝트 타입` 형식으로 작성합니다.
+- 이름을 과도학 ㅔ축약하지 않습니다. (ex. button -> btn)
+```swift
+✅ Preferred
+@IBOutlet weak var searchIdButton: UIButton!
+@IBOutlet weak var passwordTextField: UITextField!
+
+⛔️ Not Preferred
+@IBOutlet weak var searchIdBT: UIButton!
+@IBOutlet weak var textPasswd: UITextField!
+```
+
+- `Bool` 타입의 변수는 비교하는 값일 땐 `is` 존재하는지 확인하는 값일 땐 `has`를 사용합니다.
+```swift
+✅ Example
+var animal = "dog"
+var isCat: Bool
+
+animal = "cat"
+isCat = (animal == "cat")
+
+✅ Example
+var animals = ["dog", "rabbit", "bird", "pig", "horse"]
+var hasCat: Bool
+
+animals.append("cat")
+hasCat = animal.contains("cat")
+```
+
+- 버튼액션 `sender`는 `Any`가 아닌 명확하게 명시해줍니다.
+```swift
+✅ Preferred
+@IBAction func onNext(_ sender: UIButton) {
+	// some action..
+}
+
+⛔️ Not Preferred
+@IBAction func onNext(_ sender: Any) {
+	// some action..
+}
+```
+
+### 2-2) 선언
+- 최초 선언 시에는 항상 `타입명`을 함께 작성합니다.
+- 특별한 이유가 없다면 `변수`보다는 `상수`를 먼저 작성합니다.
+- `Lower Camel Case`로 작성합니다.
+- 단 클래스, 구조체, 열거형은 `Upper Camel Case`로 작성합니다..
+	- 열거형의 `case`문은 `Lower Camel Case`로 작성합니다.
+```swift
+✅ Preferred
+class Company {
+	let name: String = "herren"
+	var age: Int = 6
+}
+
+⛔️ Not Preferred
+class company {
+	let name:String = "herren"
+	var age = 6
+}
+```
+
+- 인스턴스를 선언 시에는 타입을 적지 않습니다.
+	- 인스턴스에 타입이 적혀있기 때문에 중복 작성하지 않습니다.
+```swift
+✅ Preferred
+var infoList = [SomeInfo]()
+
+⛔️ Not Preferred
+var infoList: [SomeInfo] = [SomeInfo]()
+```
+
+### 2-3) ViewController
+- ViewController 변수/상수 선언시에는 VC로 줄여서 네이밍을 합니다.
+	- ex) `let mainVC = mainViewController()`
+- storyboard에서 storyboardID 즉, withIdentifier에도 VC네이밍을 사용합니다.
+	- ex) `storyvoardID` -> `mainVC`
+```swift
+let mainVC = UIStoryboard(name: "User", bundle: nil).instantiateViewController(withIdentifier: "mainVC")
+```
+
+2-4) NavigationController
+- NavigationController 변수/상수 선언시에는 NAV로 줄여서 네이밍을 합니다.
+
+```swift
+let mainNAV = UINavigationController(rootViewController: mainVC)
+```
+
+----
+
+```swift
+```
