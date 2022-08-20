@@ -6,9 +6,6 @@
 - [스타일쉐어 컨벤션](https://github.com/StyleShare/swift-style-guide)
 - [에어비엔비 컨벤션](https://github.com/airbnb/swift)
 
-
-
-
 ----
 
 ## 목차
