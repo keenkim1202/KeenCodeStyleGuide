@@ -944,7 +944,11 @@ let width = 12
 
 ## 4. Snapkit
 
-### 4-1) Left/Right vs Leading/Traling
+### 4-1) make 대신 $0 사용하기
+- make 대신 Shorthand Argument Names 를 활용하여 $0 으로 표기합니다.
+
+
+### 4-2) Left/Right vs Leading/Traling
 - `Left/Right` 보다는 `Leading/Trailing` 을 사용합니다., (Apple의 권장사항)
 	- 하지만 경우에 따라, 특정 국가와 상관없이 동일한 UX를 위해 항상 똑같은 UI를 제공하고 싶은 경우에 한해 `Left/Right`를 사용합니다.
 ```swift
