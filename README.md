@@ -39,7 +39,8 @@
 	- [3-13) CGFloat 값의 소수점이 0인 경우](https://github.com/keenkim1202/KeenCodeStyleGuide#3-13-cgfloat-%EA%B0%92%EC%9D%98-%EC%86%8C%EC%88%98%EC%A0%90-%EC%9E%90%EB%A6%AC%EA%B0%80-0-%EC%9D%B8-%EA%B2%BD%EC%9A%B0)
 
 - [4. Snapkit](https://github.com/keenkim1202/KeenCodeStyleGuide#4-snapkit)
-	- [4-1) Left/Right vs Leading/Trailing](https://github.com/keenkim1202/KeenCodeStyleGuide#4-1-leftright-vs-leadingtraling)
+	- [4-1) make 대신 $0 사용하기](https://github.com/keenkim1202/KeenCodeStyleGuide#make-대신-$0-사용하기)
+	- [4-2) Left/Right vs Leading/Trailing](https://github.com/keenkim1202/KeenCodeStyleGuide#4-1-leftright-vs-leadingtraling)
 
 ----
 
@@ -945,8 +946,18 @@ let width = 12
 ## 4. Snapkit
 
 ### 4-1) make 대신 $0 사용하기
-- make 대신 Shorthand Argument Names 를 활용하여 $0 으로 표기합니다.
+- `make` 대신 Shorthand Argument Names 를 활용하여 `$0` 으로 표기합니다.
+```swift
+✅ Preferred
+label.snp.make { make in
+	make.edges.equalToSuperView()
+}
 
+⛔️ Not Preferred
+label.snp.make {
+	$0.edges.equalToSuperView()
+}
+```
 
 ### 4-2) Left/Right vs Leading/Traling
 - `Left/Right` 보다는 `Leading/Trailing` 을 사용합니다., (Apple의 권장사항)
