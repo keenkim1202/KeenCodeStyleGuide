@@ -39,7 +39,7 @@
 	- [3-13) CGFloat 값의 소수점이 0인 경우](https://github.com/keenkim1202/KeenCodeStyleGuide#3-13-cgfloat-%EA%B0%92%EC%9D%98-%EC%86%8C%EC%88%98%EC%A0%90-%EC%9E%90%EB%A6%AC%EA%B0%80-0-%EC%9D%B8-%EA%B2%BD%EC%9A%B0)
 
 - [4. Snapkit](https://github.com/keenkim1202/KeenCodeStyleGuide#4-snapkit)
-	- [4-1) make 대신 $0 사용하기](https://github.com/keenkim1202/KeenCodeStyleGuide#make-대신-$0-사용하기)
+	- [4-1) make 대신 $0 사용하기](https://github.com/keenkim1202/KeenCodeStyleGuide/blob/main/README.md#4-1-make-%EB%8C%80%EC%8B%A0-0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 	- [4-2) Left/Right vs Leading/Trailing](https://github.com/keenkim1202/KeenCodeStyleGuide#4-1-leftright-vs-leadingtraling)
 
 ----
